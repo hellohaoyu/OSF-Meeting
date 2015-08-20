@@ -16,6 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "osf-style": "https://github.com/CenterForOpenScience/osf-style.git#ea27f1bf94f185c26c0f98bb5e1aebfe20489c05"
+
   }
 }
