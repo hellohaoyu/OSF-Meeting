@@ -1,0 +1,21 @@
+{
+  "name": "prereg-pages",
+  "version": "0.0.1",
+  "homepage": "https://github.com/caneruguz/prereg-pages",
+  "authors": [
+    "Caner Uguz <caneruguz@gmail.com>"
+  ],
+  "description": "Pages for the OSF preregistration design",
+  "main": "index.html",
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
