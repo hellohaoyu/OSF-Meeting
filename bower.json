@@ -1,11 +1,11 @@
 {
-  "name": "prereg-pages",
+  "name": "OSF-design-boilerplate",
   "version": "0.0.1",
-  "homepage": "https://github.com/caneruguz/prereg-pages",
+  "homepage": "https://github.com/caneruguz/osf-design-boilerplate",
   "authors": [
     "Caner Uguz <caneruguz@gmail.com>"
   ],
-  "description": "Pages for the OSF preregistration design",
+  "description": "Starter page for designing independent OSF pages or components",
   "main": "index.html",
   "license": "Apache 2.0",
   "ignore": [
