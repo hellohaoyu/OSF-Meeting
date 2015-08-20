@@ -17,12 +17,12 @@ This repository is intended to be a starter kit for building pages or parts of p
 
 #### Important Reading
 
-**OSF Style Guide**
-Read all of the style guide thoroughly and use it as a reference
-https://centerforopenscience.github.io/osf-style/
+**OSF Style Guide**  
+Read all of the style guide thoroughly and use it as a reference  
+https://centerforopenscience.github.io/osf-style/  
+ 
+**HTML and CSS Code Style**  
+http://cosdev.readthedocs.org/en/latest/style_guides/html_css.html  
 
-**HTML and CSS Code Style**
-http://cosdev.readthedocs.org/en/latest/style_guides/html_css.html
-
-**Javascript Code Style**
-http://cosdev.readthedocs.org/en/latest/style_guides/javascript.html#style
+**Javascript Code Style**  
+http://cosdev.readthedocs.org/en/latest/style_guides/javascript.html#style  
