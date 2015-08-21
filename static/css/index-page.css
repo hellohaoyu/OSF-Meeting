@@ -20,10 +20,7 @@
 	height: 76px;
 	cursor: pointer;
 	text-align: center;
-}
-
-div[class^='col']:first-of-type .prereg-button {
-	line-height: 48px;
+	font-weight: 500;
 }
 
 .prereg-button:hover {
@@ -33,4 +30,16 @@ div[class^='col']:first-of-type .prereg-button {
 .prereg-button.active {
 	background-color: #204762;
 	color: white;
+}
+
+@media (max-width: 767px) {
+	.prereg-button {
+		line-height: 48px;
+	}
+}
+
+@media (min-width: 992px) {
+	div[class^='col']:first-of-type .prereg-button {
+		line-height: 48px;
+	}
 }
