@@ -12,18 +12,18 @@
 }
 /* End */
 
-.prereg-container ol {
+.prereg-container ol, .prereg-container p,  .prereg-button {
 	font-size: 16px;
 }
 
-.prereg-button-row div[class^='col'] {
-	display: table;
-}
 .prereg-button {
-	height: 70px;
-	vertical-align: middle;
-	display: table-cell;
+	height: 76px;
 	cursor: pointer;
+	text-align: center;
+}
+
+div[class^='col']:first-of-type .prereg-button {
+	line-height: 48px;
 }
 
 .prereg-button:hover, .prereg-button.active {
