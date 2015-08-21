@@ -26,5 +26,5 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# hide bower installed dependencies
-bower_components
+# don't hide bower components for this project
+

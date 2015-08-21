@@ -1,0 +1,35 @@
+{
+  "name": "osf-style",
+  "homepage": "https://github.com/caneruguz/osf-style",
+  "authors": [
+    "Caner Uguz <caneruguz@gmail.com>"
+  ],
+  "description": "Styles and guidelines for the OSF",
+  "main": "css/base.css",
+  "keywords": [
+    "stylesheet",
+    "bootstrap",
+    "OSF",
+    "COS"
+  ],
+  "license": "Apache 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  },
+  "_release": "ea27f1bf94",
+  "_resolution": {
+    "type": "commit",
+    "commit": "ea27f1bf94f185c26c0f98bb5e1aebfe20489c05"
+  },
+  "_source": "https://github.com/CenterForOpenScience/osf-style.git",
+  "_target": "ea27f1bf94f185c26c0f98bb5e1aebfe20489c05",
+  "_originalSource": "https://github.com/CenterForOpenScience/osf-style.git"
+}
