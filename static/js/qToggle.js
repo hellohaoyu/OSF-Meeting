@@ -21,14 +21,14 @@ function qToggle (element, options) {
     self.settings = $.extend( {}, defaults, options );
     self._name = pluginName;
 
-    self.targetID = self.$el.attr('data-qbind-target');
-    self.groupID = self.$el.attr('data-qbind-group');
+    self.targetID = self.$el.attr('data-qtoggle-target');
+    self.groupID = self.$el.attr('data-qtoggle-group');
     self.toggleType = self.settings.animation ? self.settings.animation + 'Toggle' : 'toggle';
     if(self.targetID){
     	self.$target = $(self.targetID);
     	self.init();
     } else {
-    	console.warn('qBind needs a target to be defined by adding data-qbind-target to the trigger element for the  following item :', self.$el);
+    	console.warn('qtoggle needs a target to be defined by adding data-qtoggle-target to the trigger element for the  following item :', self.$el);
     }
 }
 
@@ -41,9 +41,9 @@ qToggle.prototype.init = function () {
 
 		// if part of group turn off other group items
 		if(self.groupID){
-			$("[data-qbind-group= '" + self.groupID + "']").each(function(){
+			$("[data-qtoggle-group= '" + self.groupID + "']").each(function(){
 				var item = $(this);
-				var targetID = item.attr('data-qbind-target');
+				var targetID = item.attr('data-qtoggle-target');
 				if(targetID === self.targetID){ return; }
 				$(targetID + ':visible')[self.toggleType](self.settings.animationOptions);
 				item.removeClass('active');
