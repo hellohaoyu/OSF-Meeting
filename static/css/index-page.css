@@ -26,7 +26,11 @@ div[class^='col']:first-of-type .prereg-button {
 	line-height: 48px;
 }
 
-.prereg-button:hover, .prereg-button.active {
+.prereg-button:hover {
+	background-color: #E0EBF3;
+}
+
+.prereg-button.active {
 	background-color: #204762;
 	color: white;
 }
