@@ -24,6 +24,7 @@ function qToggle (element, options) {
     self.targetID = self.$el.attr('data-qtoggle-target');
     self.groupID = self.$el.attr('data-qtoggle-group');
     self.toggleType = self.settings.animation ? self.settings.animation + 'Toggle' : 'toggle';
+    console.log(self.toggleType);
     if(self.targetID){
     	self.$target = $(self.targetID);
     	self.init();
@@ -36,7 +37,11 @@ qToggle.prototype.init = function () {
 	var self = this;
 	// set listener for the trigger
 	self.$el.on('click', function(){
-		self.$target[self.toggleType](self.settings.animationOptions);
+		if(self.toggleType !== 'toggle'){
+			self.$target[self.toggleType](self.settings.animationOptions);
+		} else {
+			self.$target[self.toggleType]();
+		}
 		self.$el.toggleClass('active');
 
 		// if part of group turn off other group items
@@ -45,7 +50,11 @@ qToggle.prototype.init = function () {
 				var item = $(this);
 				var targetID = item.attr('data-qtoggle-target');
 				if(targetID === self.targetID){ return; }
-				$(targetID + ':visible')[self.toggleType](self.settings.animationOptions);
+				if(self.toggleType !== 'toggle'){
+					$(targetID + ':visible')[self.toggleType](self.settings.animationOptions);
+				} else {
+					$(targetID + ':visible')[self.toggleType]();
+				}
 				item.removeClass('active');
 			});
 		}
