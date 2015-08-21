@@ -2,3 +2,31 @@
  * Follow css style guides as shown in the OSF developer documentation
  * http://cosdev.readthedocs.org/en/latest/style_guides/html_css.html
  */
+
+
+/* Section to replicate osf style, ignore until end of this section */
+#navbarScope {
+    position: fixed;
+    width: 100%;
+    border-radius: 0;
+}
+/* End */
+
+.prereg-container ol {
+	font-size: 16px;
+}
+
+.prereg-button-row div[class^='col'] {
+	display: table;
+}
+.prereg-button {
+	height: 70px;
+	vertical-align: middle;
+	display: table-cell;
+	cursor: pointer;
+}
+
+.prereg-button:hover, .prereg-button.active {
+	background-color: #204762;
+	color: white;
+}
