@@ -86,8 +86,8 @@
             </p>
             <div class="row prereg-button-row m-v-lg">
                 <div class="col-sm-4">
-                    <div class="prereg-button active m-b-md p-md osf-box-lt p-md box-round prereg">Start a new preregistration</div>
-                    <div class="p-md osf-box box-round clearfix m-b-lg">
+                    <div class="prereg-button m-b-md p-md osf-box p-md box-round prereg" data-qbind-group="prereg" data-qbind-target="#newPrereg">Start a new preregistration</div>
+                    <div id="newPrereg" class="p-md osf-box box-round clearfix m-b-lg" style="display:none">
                         <p>Give a title to the presentation like the title of a paper that may come out of this work:
                         <form>
                             <input type="text" class="form-control" placeholder="Title">
@@ -96,8 +96,8 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="prereg-button m-b-md p-md osf-box-lt p-md box-round">Continue working on an existing preregistration</div>
-                    <div class="p-md osf-box box-round clearfix m-b-lg">
+                    <div class="prereg-button m-b-md p-md osf-box p-md box-round" data-qbind-group="prereg" data-qbind-target="#existingPrereg">Continue working on an existing preregistration</div>
+                    <div id="existingPrereg" class="p-md osf-box box-round clearfix m-b-lg" style="display:none">
                         <p>Go to an existing preregistration
                         <form>
                             <input type="text" class="form-control" placeholder="Search">
@@ -106,8 +106,8 @@
 
                 </div>
                 <div class="col-sm-4">
-                    <div class="prereg-button m-b-md p-md osf-box-lt p-md box-round">Preregister a project you already have on the OSF</div>
-                    <div class="p-md osf-box box-round clearfix m-b-lg">
+                    <div class="prereg-button m-b-md p-md osf-box p-md box-round" data-qbind-group="prereg" data-qbind-target="#existingProject">Preregister a project you already have on the OSF</div>
+                    <div id="existingProject" class="p-md osf-box box-round clearfix m-b-lg" style="display:none">
                         <p>Preregister and existing project
                         <form>
                             <input type="text" class="form-control" placeholder="Search">
@@ -164,5 +164,8 @@
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/static/js/doThings.js"></script>
+        <script src="/static/js/pages/index-page.js"></script>
+
     </body>
 </html>
