@@ -54,13 +54,14 @@
             <div class="text-center m-t-lg">
                 <h3>Preregistration Challenge </h3>
                 <hr>
+                <h2> Notice of Consent </h2>
             </div>
 
-            <h2> Notice of Consent </h2>
-            <div class="row">
+
+            <div class="row m-t-xl">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <p> We made this Challenge to encourage the practice of pre-registration while being as fair and transparent as possible. Below are eight items that we need to make sure you understand before you begin. We welcome questions (prereg@cos.io).  </p>
-                    <ol>
+                    <p> We made this Challenge to encourage the practice of pre-registration while being as fair and transparent as possible. Below are eight items that we need to make sure you understand before you begin. <strong> We welcome questions (prereg@cos.io).</strong>  </p>
+                    <ol id="consentList">
                         <li>Research plans that you submit through this process will be reviewed by Pre-Reg administrators and reviewers.</li>
                         <li>You must also submit your published article for review before receiving the prize, and the article must meet these guidelines. </li>
                         <li>Prizes will be awarded at pre-determined dates to eligible entrants. If more eligible entrants exist than available prizes, entrants will be ranked based on date of registration. </li>
@@ -72,11 +73,19 @@
                     </ol>
                 </div>
             </div>
-
-
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <div class="checkbox checkbox-box">
+                        <label class="">
+                        <input type="checkbox" value="">
+                        I agree to the terms and conditions.
+                        </label>
+                    </div>
+                    <button id="preregAgreeButton" type="submit" class="btn btn-primary pull-right disabled">Continue</button>
+                </div>
+            </div>
 
         </div>
-
 
 
         <footer class="footer m-t-lg m-b-lg p-lg bg-color-light">
@@ -126,6 +135,18 @@
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="/static/js/qToggle.js"></script>
         <script src="/static/js/pages/index-page.js"></script>
+        <script type="text/javascript">
+        // This script is for demonstration, actual implementation should probably use knockout.
+        $(document).ready(function(){
+            $(".checkbox-box input[type='checkbox']").change(function() {
+                if(this.checked) {
+                    $('#preregAgreeButton').removeClass('disabled');
+                } else {
+                    $('#preregAgreeButton').addClass('disabled');
+                }
+            });
+        })
+        </script>
 
     </body>
 </html>

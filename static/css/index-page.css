@@ -32,6 +32,17 @@
 	color: white;
 }
 
+#consentList li {
+	padding: 5px 0;
+}
+
+.checkbox-box {
+    background-color: #F5F5F5;
+    padding: 9px 9px 9px 20px;
+    border-left: 3px solid #F56565;
+    font-size: 16px;
+}
+
 @media (max-width: 767px) {
 	.prereg-button {
 		line-height: 48px;
