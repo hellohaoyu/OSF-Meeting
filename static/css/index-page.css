@@ -41,36 +41,34 @@ height: 320px;
     border: 1px solid #EEE;
 }
 
-.left {
+.toggle-box-left {
     border-right: none;
 }
-.right {
+.toggle-box-right {
 
 }
 
-.toggle-box.active {
+.toggle-box-active {
     z-index: 1;
 }
-.toggle-box.active.left {
+.toggle-box-active.toggle-box-left {
     box-shadow: 3px 0px 6px -2px #AAA;
     border-left: 3px solid #5CB85C;
 }
-.toggle-box.active.right {
+.toggle-box-active.toggle-box-right {
     box-shadow: -3px 0px 6px -2px #AAA;
-        border-right: 3px solid #5CB85C;
-
+    border-right: 3px solid #5CB85C;
 }
 
-
-.toggle-box.muted {
+.toggle-box-muted {
     background-color: #F5F5F5;
     color: #ccc;
 }
-.muted .btn.btn-default {
+.toggle-box-muted .btn.btn-default {
     color: #ccc;
     border-color: #eee;
 }
-.muted input {
+.toggle-box-muted input {
     color: #ccc;
     border-color: #eee;
 }
