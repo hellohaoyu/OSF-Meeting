@@ -177,7 +177,19 @@
         <script src="/static/js/qToggle.js"></script>
         <script src="/static/js/pages/index-page.js"></script>
         <script type="text/javascript">
-
+            $('.toggle-box').on('click', function(){
+                var el = $(this);
+                var isMuted = el.hasClass('toggle-box-muted');
+                var isActive = el.hasClass('toggle-box-active');
+                if (isMuted) {
+                    $('.toggle-box-active').removeClass('toggle-box-active').addClass('toggle-box-muted');
+                    el.removeClass('toggle-box-muted').addClass('toggle-box-active');
+                }
+                if (isActive) {
+                    $('.toggle-box-muted').removeClass('toggle-box-muted').addClass('toggle-box-active');
+                    el.removeClass('toggle-box-active').addClass('toggle-box-muted');
+                }
+            });
         </script>
 
     </body>
