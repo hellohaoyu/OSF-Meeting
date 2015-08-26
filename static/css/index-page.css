@@ -12,6 +12,9 @@
 }
 /* End */
 
+
+/* PREREG PAGES */
+
 .prereg-container ol, .prereg-container p,  .prereg-button {
 	font-size: 16px;
 }
@@ -32,10 +35,33 @@
 	color: white;
 }
 
-#consentList li {
-	padding: 5px 0;
+@media (max-width: 767px) {
+    .prereg-button {
+        line-height: 48px;
+    }
 }
 
+@media (min-width: 992px) {
+    div[class^='col']:first-of-type .prereg-button {
+        line-height: 48px;
+    }
+}
+
+/* CONSENT PAGE */
+
+.checkbox-box {
+    background-color: #F5F5F5;
+    padding: 9px 9px 9px 20px;
+    border-left: 3px solid #F56565;
+    font-size: 16px;
+}
+
+#consentList li {
+    padding: 5px 0;
+}
+
+
+/* LOGIN PAGE */
 .toggle-box {
 height: 320px;
     border: 1px solid #EEE;
@@ -72,22 +98,9 @@ height: 320px;
     color: #ccc;
     border-color: #eee;
 }
-
-.checkbox-box {
-    background-color: #F5F5F5;
-    padding: 9px 9px 9px 20px;
-    border-left: 3px solid #F56565;
-    font-size: 16px;
+.toggle-box-muted .btn-success {
+    background-color: #CCC;
+    border-color: #BBB;
 }
 
-@media (max-width: 767px) {
-	.prereg-button {
-		line-height: 48px;
-	}
-}
 
-@media (min-width: 992px) {
-	div[class^='col']:first-of-type .prereg-button {
-		line-height: 48px;
-	}
-}
