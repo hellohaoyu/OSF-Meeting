@@ -1,12 +1,12 @@
 {
-  "name": "OSF-design-boilerplate",
+  "name": "OSF-Meeting",
   "version": "0.0.1",
-  "homepage": "https://github.com/caneruguz/osf-design-boilerplate",
+  "homepage": "https://github.com/haoyuchen1992/OSF-Meeting",
   "authors": [
-    "Caner Uguz <caneruguz@gmail.com>"
+    "Haoyu Chen <hc6as@virginia.edu>"
   ],
-  "description": "Starter page for designing independent OSF pages or components",
-  "main": "index.html",
+  "description": "OSF Meeting Front Page Design",
+  "main": "osf-meeting.html",
   "license": "Apache 2.0",
   "ignore": [
     "**/.*",
@@ -18,6 +18,5 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "osf-style": "https://github.com/CenterForOpenScience/osf-style.git#ea27f1bf94f185c26c0f98bb5e1aebfe20489c05"
-
   }
 }
