@@ -52,36 +52,67 @@
             </div>
         </nav>
 
-        <div id="osf-meeting-header-img">
-            <div class="container">
+        <div class="osf-meeting-header-img"> 
+            <div class="container osf-meeting-header">
                 <div class="text-center">
                     <h1>OSF for Meetings</h1>
                     <h3>A <strong>free poster and presentation sharing service</strong> for academic meetings and conferences.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 text-center">
+                    <div class="col-sm-6 text-center">
+                        <h3> For Conference Organizers </h3>
                         <i class="fa fa-rocket fa-custom-8x"></i>
-                        <h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitationem </h4>
+                        <div class="p-h-xl text-left"><h4>Reigster your conference and get an easy submission process, a permanent link to your presentations, plus analytics about who has viewed and downloaded your work. [Learn more](www.google.come)</h4></div>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-sm-6 text-center">
+                        <h3> For Conference Participants </h3>
                         <i class="fa fa-cloud-upload fa-custom-8x"></i>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae similique eligendi reiciendis sunt distinctio odit? Quia, neque, ipsa, adipisci quisquam ullam deserunt accusantium illo iste exercitat</h4>
+                        <div class="p-h-xl text-left"><h4>Share your posters and papers and use the Open Science Framework to upload your slides and other supporting materials. [Learn more](www.google.come)</h4></div>
                     </div>
                 </div>
             </div>
         </div>
-
+        
 
         <div class="container">
-            
+            <div class="row icon-bar m-t-md">
+                <div class="col-sm-4  text-center">
+                    <div class="osf-box-lt box-round p-v-md">
+                        <i class="fa fa-eye fa-custom-7x"></i>
+                        <h2>Discover</h2>
+                        <div class="p-h-lg text-left"><h4>Wish you had a widely-known place for people to learn from your talk and/or poster, then you have found your answer.</h4></div>  
+                    </div>                  
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="osf-box-lt box-round p-v-md">
+                        <i class="fa fa-users fa-custom-7x"></i>
+                        <h2>Share</h2>
+                        <div class="p-h-lg text-left"><h4>OSF has increased accessibility and collaboration for researchers like no other platform… it is truly the first of it’s kind.</h4></div>
+                     </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="osf-box-lt box-round p-v-md">
+                        <i class="fa fa-thumbs-up fa-custom-7x"></i>
+                        <h2>Trust</h2>
+                        <div class="p-h-lg text-left"><h4>OSF for Meetings is a trusted partner for over XX academic conferences. </h4></div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <h1> Who uses OSF for Meetings?</h1>
+            </div>
             <div class="row org-logo">
-                <div class="col-xs-6 col-sm-3 text-center"><a href="http://www.psychologicalscience.org/"><img src="static/img/logo/APS2.jpg" class="img-responsive" ></a></div>
-                <div class="col-xs-6 col-sm-3 text-center"><a href="http://www.bitss.org/"><img src="static/img/logo/BITSS2.jpg" class="img-responsive" ></a></div>
-                <div class="col-xs-6 col-sm-3 text-center"><a href="http://www.nrao.edu/"><img src="static/img/logo/NRAO2.jpg" class="img-responsive" ></a></div>
-                <div class="col-xs-6 col-sm-3 text-center"><a href="http://www.spsp.org/"><img src="static/img/logo/SPSP2.jpg" class="img-responsive" ></a></div>
+                <div class="col-sm-3 col-xs-6  text-center"><a href="http://www.psychologicalscience.org/"><img src="static/img/logo/APS2.jpg" class="img-responsive" ></a></div>
+                <div class="col-sm-3 col-xs-6 text-center"><a href="http://www.bitss.org/"><img src="static/img/logo/BITSS1.png" class="img-responsive" ></a></div>
+                <div class="col-sm-3 col-xs-6 text-center"><a href="http://www.nrao.edu/"><img src="static/img/logo/NRAO2.jpg" class="img-responsive" ></a></div>
+                <div class="col-sm-3 col-xs-6 text-center"><a href="http://www.spsp.org/"><img src="static/img/logo/SPSP2.jpg" class="img-responsive" ></a></div>
             </div>
 
         </div> 
+
+
 
 
         <footer class="footer m-t-lg m-b-lg p-lg bg-color-light">
@@ -129,23 +160,5 @@
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="static/js/qToggle.js"></script>
-        <script src="static/js/pages/index-page.js"></script>
-        <script type="text/javascript">
-            $('.toggle-box').on('click', function(){
-                var el = $(this);
-                var isMuted = el.hasClass('toggle-box-muted');
-                var isActive = el.hasClass('toggle-box-active');
-                if (isMuted) {
-                    $('.toggle-box-active').removeClass('toggle-box-active').addClass('toggle-box-muted');
-                    el.removeClass('toggle-box-muted').addClass('toggle-box-active');
-                }
-                if (isActive) {
-                    $('.toggle-box-muted').removeClass('toggle-box-muted').addClass('toggle-box-active');
-                    el.removeClass('toggle-box-active').addClass('toggle-box-muted');
-                }
-            });
-        </script>
-
     </body>
 </html>

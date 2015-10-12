@@ -1,4 +1,4 @@
-#osf-meeting-header-img {
+.osf-meeting-header-img {
     background: #67a3bf;
     /* Old browsers */
     background: -moz-linear-gradient(35deg, #67a3bf 0%, #166596 18%, #000000 100%);
@@ -15,20 +15,37 @@
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a3bf', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-    height: 400px;
+    height: 450px;
     color: #fff;
     padding-top: 40px;
     position: relative;
 }
 
-#osf-meeting-header-img .fa-custom-7x {
-    font-size: 64px;
+
+
+
+@media screen and (max-width: 767px) {
+    .icon-bar .fa-custom-7x {
+        font-size: 60px;
+    }
+
+    .osf-meeting-header .fa-custom-8x {
+        font-size: 96px;
+    }
 }
 
-#osf-meeting-header-img  .fa-custom-8x {
-    font-size: 128px;
+
+@media screen and (min-width: 768px) {
+    .icon-bar .fa-custom-7x {
+        font-size: 80px;
+    }
+
+    .osf-meeting-header .fa-custom-8x {
+        font-size: 128px;
+    }
 }
+
 
 .org-logo img{
-    padding: 20px 5% 0 5%;
+    padding: 20px 20% 0 20%;
 }
