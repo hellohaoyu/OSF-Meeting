@@ -15,7 +15,7 @@
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a3bf', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-    height: 450px;
+/*    height: 450px;*/
     color: #fff;
     padding-top: 40px;
     position: relative;
@@ -48,4 +48,21 @@
 
 .org-logo img{
     padding: 20px 20% 0 20%;
+}
+
+.eq-height-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.even-width {
+    width: 30%;
+}
+
+.collapse .osf-meeting-collapse{
+    text-align: left;
+    background: #FFF;
+    color: black;
 }
