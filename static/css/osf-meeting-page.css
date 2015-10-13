@@ -15,14 +15,10 @@
     /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a3bf', endColorstr='#000000', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-/*    height: 450px;*/
     color: #fff;
     padding-top: 40px;
     position: relative;
 }
-
-
-
 
 @media screen and (max-width: 767px) {
     .icon-bar .fa-custom-7x {
@@ -34,7 +30,6 @@
     }
 }
 
-
 @media screen and (min-width: 768px) {
     .icon-bar .fa-custom-7x {
         font-size: 50px;
@@ -45,20 +40,8 @@
     }
 }
 
-
 .org-logo img{
     padding: 20px 20% 0 20%;
-}
-
-.eq-height-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-
-.even-width {
-    width: 30%;
 }
 
 .collapse .osf-meeting-collapse{
@@ -68,9 +51,15 @@
 }
 
 .blue-icon {
-  color: #337ab7;
+    color: #337ab7;
 }
 
 .osf-meeting-p {
- /*   font-size: 1.2em;*/
+    font-size: 15px;
+}
+.m-b-100 {
+    margin-bottom: 60px; 
+}
+.m-v-15-p {
+   margin:0 15%
 }
