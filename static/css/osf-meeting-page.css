@@ -26,22 +26,22 @@
 
 @media screen and (max-width: 767px) {
     .icon-bar .fa-custom-7x {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .osf-meeting-header .fa-custom-8x {
-        font-size: 96px;
+        font-size: 80px;
     }
 }
 
 
 @media screen and (min-width: 768px) {
     .icon-bar .fa-custom-7x {
-        font-size: 80px;
+        font-size: 50px;
     }
 
     .osf-meeting-header .fa-custom-8x {
-        font-size: 128px;
+        font-size: 100px;
     }
 }
 
@@ -65,4 +65,12 @@
     text-align: left;
     background: #FFF;
     color: black;
+}
+
+.blue-icon {
+  color: #337ab7;
+}
+
+.osf-meeting-p {
+ /*   font-size: 1.2em;*/
 }
